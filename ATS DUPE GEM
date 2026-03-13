@@ -1,0 +1,9 @@
+local amount = 2000 -- change to any amount you want to dupe max is 2k if over is have queue
+local code = "UPDATE1ISREAL" -- change to any code in game work all code
+local rem = game:GetService("ReplicatedStorage")
+local rem2 = rem:WaitForChild("Remotes", 9e9):WaitForChild("Misc", 9e9):WaitForChild("CodesEvent", 9e9)
+for x = 1,amount do
+    task.spawn(function()
+    rem2:FireServer(code)
+end)
+end
